@@ -4,7 +4,7 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 procedure Check_Positive is
    N : Integer;
 begin
-   Put("Enter an integer value: ");
+   Put("(Check Positive) Enter an integer value: ");
    Get(N);
    Put(N);
    if N > 0 then
@@ -12,4 +12,5 @@ begin
    else
       Put_Line(" is not a positive number");
    end if;
+
 end Check_Positive;
