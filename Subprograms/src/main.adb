@@ -5,6 +5,8 @@ with Show_Increment;
 with Quadruple;
 with In_Out_Parameters;
 with Out_Parameters;
+with Mutually_Recursive_Subprograms;
+with Renaming;
 
 procedure Main is
    A, B, C, D, Q : Integer;
@@ -51,4 +53,6 @@ begin
 
    In_Out_Parameters;
    Out_Parameters;
+   Mutually_Recursive_Subprograms;
+   Renaming;
 end Main;
