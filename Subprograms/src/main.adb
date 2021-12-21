@@ -1,6 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Increment;
 with Increment_By;
+with Show_Increment;
 
 procedure Main is
    A, B, C, D : Integer;
@@ -38,5 +39,7 @@ begin
       D := Increment(D);
       Put_Line ("D is " & Integer'Image(D));
    end loop;
+
+   Show_Increment;
 
 end Main;
