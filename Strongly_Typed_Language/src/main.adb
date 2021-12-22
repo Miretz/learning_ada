@@ -5,6 +5,8 @@ with Enumeration_Example;
 with Floating_Point_Demo;
 with Custom_Float_Types;
 with Floating_Point_Range;
+with Conv;
+with Derived_Types;
 
 procedure Main is
 
@@ -16,4 +18,6 @@ begin
    Floating_Point_Demo;
    Custom_Float_Types;
    Floating_Point_Range;
+   Conv;
+   Derived_Types;
 end Main;
