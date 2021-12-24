@@ -13,7 +13,7 @@ procedure Derived_Types is
    type Days is (Mon, Tue, Wed, Thu, Fri, Sat, Sun);
    type Weekend_Days_Deriv is new Days range Sat .. Sun;
 
-   -- subtype - similar to above but Days and Weekend_Days_Sub
+   -- subtype - similar to above but Days and Weekend_Days
    -- are actually the same type
    subtype Weekend_Days is Days range Sat .. Sun;
 
