@@ -5,6 +5,7 @@ with Simple_Array_Bounds;
 with Range_Example;
 with Array_Attributes_Example;
 with Unconstrained_Array_Example;
+with Greet;
 
 procedure Main is
 
@@ -16,4 +17,5 @@ begin
    Range_Example;
    Array_Attributes_Example;
    Unconstrained_Array_Example;
+   Greet;
 end Main;
