@@ -6,6 +6,7 @@ with Range_Example;
 with Array_Attributes_Example;
 with Unconstrained_Array_Example;
 with Greet;
+with Indefinite_Subtypes;
 
 procedure Main is
 
@@ -18,4 +19,5 @@ begin
    Array_Attributes_Example;
    Unconstrained_Array_Example;
    Greet;
+   Indefinite_Subtypes;
 end Main;
