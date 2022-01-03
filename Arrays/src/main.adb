@@ -7,6 +7,7 @@ with Array_Attributes_Example;
 with Unconstrained_Array_Example;
 with Greet;
 with Indefinite_Subtypes;
+with Returning_Unconstrained_Arrays;
 
 procedure Main is
 
@@ -20,4 +21,5 @@ begin
    Unconstrained_Array_Example;
    Greet;
    Indefinite_Subtypes;
+   Returning_Unconstrained_Arrays;
 end Main;
