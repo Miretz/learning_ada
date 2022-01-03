@@ -8,6 +8,7 @@ with Unconstrained_Array_Example;
 with Greet;
 with Indefinite_Subtypes;
 with Returning_Unconstrained_Arrays;
+with Array_Slices;
 
 procedure Main is
 
@@ -22,4 +23,5 @@ begin
    Greet;
    Indefinite_Subtypes;
    Returning_Unconstrained_Arrays;
+   Array_Slices;
 end Main;
