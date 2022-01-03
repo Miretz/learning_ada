@@ -9,6 +9,8 @@ with Greet;
 with Indefinite_Subtypes;
 with Returning_Unconstrained_Arrays;
 with Array_Slices;
+with Measurements_Test;
+with Test_Reverse_Colors;
 
 procedure Main is
 
@@ -24,4 +26,6 @@ begin
    Indefinite_Subtypes;
    Returning_Unconstrained_Arrays;
    Array_Slices;
+   Measurements_Test;
+   Test_Reverse_Colors;
 end Main;
