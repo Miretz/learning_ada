@@ -26,4 +26,9 @@ package Access_Types is
    DDD : Date_Acc := new Date'(5, January, 2022);
    MsgMsg : String_Acc := new String'("Hello");
 
+   -- dereferencing
+   -- aka accessing the value of the access type (pointer)
+   Today : Date := DDD.all;
+   J : Integer := DDD.Day; -- implicit deref
+
 end Access_Types;
