@@ -7,6 +7,7 @@ with Gtk.Button;      use Gtk.Button;
 with Gtk.Main;
 with Gtk.Window;      use Gtk.Window;
 
+with Gtk_Boilerplate; use Gtk_Boilerplate;
 with Click_Handlers;  use Click_Handlers;
 
 procedure Main is
@@ -14,28 +15,9 @@ procedure Main is
    Win   : Gtk_Window;
    Label : Gtk_Label;
    Box   : Gtk_Vbox;
+   H_Box   : Gtk_Hbox;
    Button: Gtk_Button;
    Button_2: Gtk_Button;
-
-   function Delete_Event_Cb
-     (Self  : access Gtk_Widget_Record'Class;
-      Event : Gdk.Event.Gdk_Event)
-      return Boolean;
-
-   ---------------------
-   -- Delete_Event_Cb --
-   ---------------------
-
-   function Delete_Event_Cb
-     (Self  : access Gtk_Widget_Record'Class;
-      Event : Gdk.Event.Gdk_Event)
-      return Boolean
-   is
-      pragma Unreferenced (Self, Event);
-   begin
-      Gtk.Main.Main_Quit;
-      return True;
-   end Delete_Event_Cb;
 
 begin
    --  Initialize GtkAda.
@@ -50,17 +32,22 @@ begin
    Win.Add (Box);
 
    --  Add a label
-   Gtk_New (Label, "Hello world!");
+   Gtk_New (Label);
+   Label.Set_Markup(Big_Text_Markup("Hello world!"));
    Box.Add (Label);
 
+   -- Add H_Box
+   Gtk_New_Hbox (H_Box, False, 4);
+   Box.Pack_End (H_Box, False);
+
    -- Add a button with callback
-   Gtk_New (Button, "Click Me!");
-   Box.Add (Button);
+   Gtk_New (Button, "Click this button!");
+   H_Box.Add (Button);
    Button.On_Clicked (Increment_Handler'Access);
 
    -- Add a second button with callback
    Gtk_New (Button_2, "Me too!");
-   Box.Add (Button_2);
+   H_Box.Add (Button_2);
    Button_2.On_Clicked (Call => Label_Change_Handler'Access, Slot => Label);
 
    -- Stop the Gtk process when closing the window

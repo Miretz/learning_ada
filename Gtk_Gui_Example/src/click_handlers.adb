@@ -1,4 +1,4 @@
-with Ada.Text_IO; use Ada.Text_IO;
+with Gtk_Boilerplate; use Gtk_Boilerplate;
 
 package body Click_Handlers is
    
@@ -6,19 +6,24 @@ package body Click_Handlers is
      (Self : access Gtk_Button_Record'Class) is
    begin
       Clicks := Clicks + 1;
-      Put_Line("Current click count: " 
-               & Integer'Image (Clicks));
       Self.Set_Label("Clicked "
                      & Integer'Image(Clicks)
                      & " times.");
    end Increment_Handler;
+   
+   Second_Button_Clicked : Boolean := False;   
    
    procedure Label_Change_Handler
      (Label : access GObject_Record'Class) is
       L : Gtk_Label;
    begin
       L := Gtk_Label(Label);
-      L.Set_Text("You clicked the second button!");
+      if Second_Button_Clicked then
+         L.Set_Markup(Big_Text_Markup("You clicked the second button again!"));
+      else
+         Second_Button_Clicked := True;
+         L.Set_Markup(Big_Text_Markup("You clicked the second button!"));
+      end if;
    end Label_Change_Handler;
-
+   
 end Click_Handlers;
