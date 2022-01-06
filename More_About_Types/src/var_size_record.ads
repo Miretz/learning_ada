@@ -7,7 +7,7 @@ package Var_Size_Record is
 
    type Growable_Stack is record
       Items : Items_Array (1 .. Max_Len);
-      Len   : Naturall
+      Len   : Natural;
    end record;
 
    G : Growable_Stack;

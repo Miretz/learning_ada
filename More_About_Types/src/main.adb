@@ -4,6 +4,7 @@ with Overloading;
 with Qual_Expr;
 with Access_Types;
 with Simple_List_Example;
+with Var_Size_Record;
 
 procedure Main is
 begin
