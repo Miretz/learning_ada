@@ -1,23 +1,23 @@
-with Gdk.Event;       use Gdk.Event;
+with Gdk.Event; use Gdk.Event;
 
-with Gtk.Box;         use Gtk.Box;
-with Gtk.Label;       use Gtk.Label;
-with Gtk.Widget;      use Gtk.Widget;
-with Gtk.Button;      use Gtk.Button;
+with Gtk.Box;    use Gtk.Box;
+with Gtk.Label;  use Gtk.Label;
+with Gtk.Widget; use Gtk.Widget;
+with Gtk.Button; use Gtk.Button;
 with Gtk.Main;
-with Gtk.Window;      use Gtk.Window;
+with Gtk.Window; use Gtk.Window;
 
 with Gtk_Boilerplate; use Gtk_Boilerplate;
 with Click_Handlers;  use Click_Handlers;
 
 procedure Main is
 
-   Win   : Gtk_Window;
-   Label : Gtk_Label;
-   Box   : Gtk_Vbox;
-   H_Box   : Gtk_Hbox;
-   Button: Gtk_Button;
-   Button_2: Gtk_Button;
+   Win      : Gtk_Window;
+   Label    : Gtk_Label;
+   Box      : Gtk_Vbox;
+   H_Box    : Gtk_Hbox;
+   Button   : Gtk_Button;
+   Button_2 : Gtk_Button;
 
 begin
    --  Initialize GtkAda.
@@ -33,7 +33,7 @@ begin
 
    --  Add a label
    Gtk_New (Label);
-   Label.Set_Markup(Big_Text_Markup("Hello world!"));
+   Label.Set_Markup (Big_Text_Markup ("Hello world!"));
    Box.Add (Label);
 
    -- Add H_Box
