@@ -5,10 +5,14 @@ with Qual_Expr;
 with Access_Types;
 with Simple_List_Example;
 with Var_Size_Record;
+with Var_Size_Record_2;
+with Test_Discriminants;
+with More_About_Records;
 
 procedure Main is
 begin
    Print_Points(Points_2);
    Overloading;
    Simple_List_Example;
+   More_About_Records;
 end Main;
