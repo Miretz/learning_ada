@@ -15,6 +15,7 @@ with Decimal_Fixed_Point_Smaller;
 with Normalized_Fixed_Point_Type;
 with Custom_Fixed_Point_Range;
 with Fixed_Point_Op;
+with Character_Example;
 
 procedure Main is
 begin
@@ -29,4 +30,5 @@ begin
    Normalized_Fixed_Point_Type;
    Custom_Fixed_Point_Range;
    Fixed_Point_Op;
+   Character_Example;
 end Main;
