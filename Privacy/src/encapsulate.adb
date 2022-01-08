@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-package body encapsulate is
+package body Encapsulate is
 
    procedure Hello is
    begin
@@ -12,4 +12,4 @@ package body encapsulate is
       Put_Line ("Hello #2");
    end Hello2;
 
-end encapsulate;
+end Encapsulate;
