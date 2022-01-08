@@ -1,7 +1,8 @@
 with Operator;
 with Set;
+with Show_Generic_Instantiation;
 
 procedure Main is
 begin
-   null;
+   Show_Generic_Instantiation;
 end Main;
