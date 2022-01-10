@@ -13,6 +13,7 @@ with Show_Decimal_IO_Inst;
 with Show_Stack;
 with Test_Non_Generic_Swap_Colors;
 with Test_Generic_Swap_Colors;
+with Test_Reverse_Colors;
 
 procedure Main is
 begin
@@ -45,6 +46,10 @@ begin
    New_Line;
    Put_Line ("Example generic swap");
    Test_Generic_Swap_Colors;
+   New_Line;
+
+   Put_Line ("Example generic reverse colors");
+   Test_Reverse_Colors;
    New_Line;
 
 end Main;
