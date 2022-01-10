@@ -14,6 +14,7 @@ with Show_Stack;
 with Test_Non_Generic_Swap_Colors;
 with Test_Generic_Swap_Colors;
 with Test_Reverse_Colors;
+with Test_Reverse_Colors_2;
 
 procedure Main is
 begin
@@ -50,6 +51,10 @@ begin
 
    Put_Line ("Example generic reverse colors");
    Test_Reverse_Colors;
+   New_Line;
+
+   Put_Line ("Example: Test application");
+   Test_Reverse_Colors_2;
    New_Line;
 
 end Main;
