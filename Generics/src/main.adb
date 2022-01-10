@@ -11,6 +11,8 @@ with Show_Float_IO_Inst;
 with Show_Decimal_IO_Inst;
 
 with Show_Stack;
+with Test_Non_Generic_Swap_Colors;
+with Test_Generic_Swap_Colors;
 
 procedure Main is
 begin
@@ -36,6 +38,13 @@ begin
 
    Put_Line ("Example ADTs");
    Show_Stack;
+   New_Line;
+
+   Put_Line ("Example non-generic swap");
+   Test_Non_Generic_Swap_Colors;
+   New_Line;
+   Put_Line ("Example generic swap");
+   Test_Generic_Swap_Colors;
    New_Line;
 
 end Main;
