@@ -5,7 +5,8 @@
 -- with Show_Rendezvous;
 -- with Show_Rendezvous_Loop;
 -- with Show_Time_Task;
-with Show_Time_Task_Fixed_Time;
+-- with Show_Time_Task_Fixed_Time;
+with Show_Protected_Objects;
 
 procedure Main is
 
@@ -17,5 +18,6 @@ begin
    -- Show_Rendezvous;
    -- Show_Rendezvous_Loop;
    -- Show_Time_Task;
-   Show_Time_Task_Fixed_Time;
+   -- Show_Time_Task_Fixed_Time;
+   Show_Protected_Objects;
 end Main;
