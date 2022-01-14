@@ -9,7 +9,8 @@
 -- with Show_Protected_Objects;
 -- with Show_Protected_Objects_Entries;
 -- with Show_Simple_Task_Type;
-with Show_Simple_Task_Type_Array;
+-- with Show_Simple_Task_Type_Array;
+with Show_Protected_Object_Type;
 
 procedure Main is
 
@@ -25,5 +26,6 @@ begin
    -- Show_Protected_Objects;
    -- Show_Protected_Objects_Entries;
    -- Show_Simple_Task_Type;
-   Show_Simple_Task_Type_Array;
+   -- Show_Simple_Task_Type_Array;
+   Show_Protected_Object_Type;
 end Main;
