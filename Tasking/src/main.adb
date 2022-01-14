@@ -7,7 +7,9 @@
 -- with Show_Time_Task;
 -- with Show_Time_Task_Fixed_Time;
 -- with Show_Protected_Objects;
-with Show_Protected_Objects_Entries;
+-- with Show_Protected_Objects_Entries;
+-- with Show_Simple_Task_Type;
+with Show_Simple_Task_Type_Array;
 
 procedure Main is
 
@@ -21,5 +23,7 @@ begin
    -- Show_Time_Task;
    -- Show_Time_Task_Fixed_Time;
    -- Show_Protected_Objects;
-   Show_Protected_Objects_Entries;
+   -- Show_Protected_Objects_Entries;
+   -- Show_Simple_Task_Type;
+   Show_Simple_Task_Type_Array;
 end Main;
