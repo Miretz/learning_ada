@@ -14,5 +14,5 @@ begin
    DB_Entry ("John", 30);
 
    -- Precodnition will fail because the name length is 0
-   DB_Entry ("", 21);
+   -- DB_Entry ("", 21);
 end Show_Simple_Precondition;
