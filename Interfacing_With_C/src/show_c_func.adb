@@ -9,9 +9,15 @@ procedure Show_C_Func is
 
       -- Imports the function from C code
 
+   procedure Test_Func with
+      Import        => True,
+      Convention    => C,
+      External_Name => "test_func";
+
    V : int;
 
 begin
    V := my_func (2);
    Put_Line ("Result is " & int'Image (V));
+   Test_Func;
 end Show_C_Func;
