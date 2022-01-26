@@ -5,7 +5,7 @@ procedure Show_C_Struct is
    type c_struct is record
       a : int;
       b : long;
-      c : unisgned;
+      c : unsigned;
       d : double;
    end record with
       Convention => C;
