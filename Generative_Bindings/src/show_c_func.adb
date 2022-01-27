@@ -9,12 +9,12 @@ procedure Show_C_Func is
    Name    : constant chars_ptr := New_String ("John Doe");
    Address : constant chars_ptr := New_String ("Small Town");
 
-   T : access test := test_create;
+   T : access Test := Create;
 begin
-   test_reset (T);
-   test_set_name (T, Name);
-   test_set_address (T, Address);
+   Reset (T);
+   Set_Name (T, Name);
+   Set_Address (T, Address);
 
-   test_display (T);
-   test_destroy (T);
+   Display (T);
+   Destroy (T);
 end Show_C_Func;
