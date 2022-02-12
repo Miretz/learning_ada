@@ -17,6 +17,22 @@ procedure Main is
    Obj_5 : My_Class := My_Class (Obj_2);
    -- View conversion - changes the actual class tag
 
+   package Extend is
+      type D2 is new Derived with null record;
+      procedure Bar (Self : in out D2; Val : Integer);
+   end Extend;
+
+   package body Extend is
+      procedure Bar (Self : in out D2; Val : Integer) is
+      begin
+         Self.A := Self.A + Val;
+      end Bar;
+   end Extend;
+
+   use Extend;
+
+   Obj_Ex : D2 := (A => 15);
+
 begin
    Primitives;
 
@@ -26,4 +42,14 @@ begin
    Foo (Obj_4); -- Dispatching: Calls My_Class.Foo
 
    Foo (Obj_5); -- Non dispatching: Calls My_Class.Foo
+
+   -- Same as above with dot notation
+   Obj_1.Foo;
+   Obj_2.Foo;
+   Obj_3.Foo;
+   Obj_4.Foo;
+   Obj_5.Foo;
+
+   Obj_Ex.Bar (2);
+   Obj_Ex.Foo;
 end Main;
