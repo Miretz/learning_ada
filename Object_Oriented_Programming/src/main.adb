@@ -12,6 +12,13 @@ procedure Main is
    -- My_Class'Class designates classwide type for My_Class
    -- which includes all descending types
 
+   Obj_4 : My_Class'Class := Obj_1;
+
 begin
    Primitives;
+
+   Foo (Obj_1); -- Non dispatching: Calls My_Class.Foo
+   Foo (Obj_2); -- Non dispatching: Calls Derived.Foo
+   Foo (Obj_3); -- Dispatching: Calls Derived.Foo
+   Foo (Obj_4); -- Dispatching: Calls My_Class.Foo
 end Main;
